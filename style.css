@@ -1,26 +1,30 @@
 /* style.css */
 
+/* 전체 페이지 스타일 */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #f0f4f7; /* 부드러운 배경색 */
 }
 
+/* 메인 컨테이너 (전체 내용을 감싸는 영역) */
 .container {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* 둥근 모서리 */
 }
 
+/* 헤더 스타일 */
 header {
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #e0e0e0; /* 옅은 회색 라인 */
 }
 
 header h1 {
@@ -42,14 +46,21 @@ nav a {
     text-decoration: none;
     color: #3498db;
     font-weight: bold;
+    transition: color 0.3s ease; /* 호버 시 색상 변화 효과 */
 }
 
 nav a:hover {
     color: #2980b9;
 }
 
+/* 섹션(단락) 스타일 - 둥근 모서리 박스 */
 section {
-    padding: 20px 0;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9; /* 섹션 배경색 */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 section h2 {
@@ -58,6 +69,7 @@ section h2 {
     padding-bottom: 5px;
 }
 
+/* 목록 스타일 */
 ul {
     list-style-type: none;
     padding: 0;
@@ -67,6 +79,7 @@ li {
     margin-bottom: 10px;
 }
 
+/* 정보 목록 (flexbox) 스타일 */
 .info-list li {
     display: flex;
     justify-content: space-between;
@@ -78,6 +91,7 @@ li {
     border-bottom: none;
 }
 
+/* 저술 활동 항목 스타일 */
 .work-item {
     margin-bottom: 25px;
 }
@@ -87,19 +101,19 @@ li {
     color: #444;
 }
 
-.work-item p {
-    margin: 0;
-    font-size: 0.9em;
-    color: #666;
+.work-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .book-link {
     text-decoration: none;
-    color: inherit;
+    color: #333;
     font-weight: bold;
 }
 
 .book-link:hover {
+    color: #3498db;
     text-decoration: underline;
 }
 
@@ -115,5 +129,8 @@ li {
     }
     .info-list li span:last-child {
         margin-top: 5px;
+    }
+    section {
+        padding: 15px;
     }
 }
