@@ -85,6 +85,46 @@ li {
     margin-bottom: 10px;
 }
 
+#what-i-do {
+    font-family: sans-serif; /* 기본 글꼴 설정 */
+    background-color: #fcfbf8; /* 이미지와 유사한 배경색 */
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    max-width: 800px; /* 너무 넓어지지 않게 최대 너비 설정 */
+}
+
+#what-i-do h2 {
+    font-size: 1.5em; /* '주요 업무' 글자 크기 */
+    margin-bottom: 10px;
+}
+
+/* h2 제목 바로 아래의 가로줄 스타일 */
+#what-i-do hr {
+    border: 0;
+    border-top: 1px solid #cecece;
+}
+
+/* 각 업무 항목을 감싸는 div */
+.task-item {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* 업무 제목 스타일 (예: 한의학 연구 기획 및 자문) */
+.task-item .title {
+    font-weight: 600; /* 약간 굵은 글씨 */
+    font-size: 1.1em;
+    margin: 0 0 10px 0; /* 위아래, 좌우 여백 설정 */
+    color: #333;
+}
+
+/* 세부 설명 스타일 (들여쓰기 적용) */
+.task-item .description {
+    margin: 5px 0 5px 20px; /* 왼쪽에 20px 여백을 주어 들여쓰기 효과 */
+    color: #555; /* 제목보다 약간 연한 글씨색 */
+    line-height: 1.6; /* 줄 간격 */
+}
+
 /* 정보 목록 (flexbox) 스타일 */
 .info-list li {
     display: flex;
